@@ -34,6 +34,35 @@ var redCurrant = {
 // ##########################################################
 
 
+var writeBerries = function (berries) {
+  document.write('<h1>Berries</h1>');
+
+  document.write('<ol>');
+
+  berries.forEach(function (berry) {
+    document.write('<li>');
+    document.write('<h2>' + berry.name + '</h2>');
+    document.write('<dl>');
+    document.write('<dt>Grows on a shrub?</dt>');
+
+    document.write('<dd>');
+    if (berry.onShrub) {
+
+    }
+    document.write('</dd>');
+
+    document.write('<dt>Energy</dt>');
+    document.write('<dd>' + berry.energy + ' kJ</dd>');
+    document.write('<dt>Carbohydrates</dt>');
+    document.write('<dd>' + berry.carbs + ' g</dd>');
+    document.write('<dt>Protein</dt>');
+    document.write('<dd>' + berry.protein + ' g</dd>');
+
+    document.write('</li>');
+  });
+  document.write('</ol>');
+};
+
 // Write your function here, name it `writeBerries`
 
 
